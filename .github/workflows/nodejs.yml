@@ -1,7 +1,7 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Node.js CI
+name: Node.js CI-CD
 
 on:
   push:
@@ -10,13 +10,12 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
-
+  lint-and-test:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [10.x, 12.x, 13.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -30,3 +29,18 @@ jobs:
     - run: yarn run test --runInBand --no-cache
       env:
         CI: true
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build and deploy 🚀
+        uses: actions/setup-node@v1
+        with:
+          node-version: 13.6.0
+      - run: npm install -g yarn
+      - run: yarn install --frozen-lockfile
+      - run: yarn lint
+      - run: yarn test --runInBand --no-cache
+      - run: yarn deploy
