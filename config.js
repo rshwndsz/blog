@@ -1,49 +1,52 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
+  url: 'https://rshwndsz.github.io/',
+  // https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages/#deploying-to-a-path-on-github-pages
+  pathPrefix: '/blog',
+  title: 'Blog by Russel Dsouza',
+  subtitle:
+    'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  copyright: '',
   disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
-  useKatex: false,
+  postsPerPage: 5,
+  googleAnalyticsId: 'UA-162757780-1',
+  useKatex: true,
   menu: [
     {
       label: 'Articles',
-      path: '/'
+      path: '/',
     },
     {
       label: 'About me',
-      path: '/pages/about'
+      path: '/pages/about',
     },
     {
       label: 'Contact me',
-      path: '/pages/contacts'
-    }
+      path: '/pages/contacts',
+    },
   ],
   author: {
-    name: 'John Doe',
+    name: 'Russel Dsouza',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio:
+      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'rshwndsz@gmail.com',
+      facebook: '',
+      telegram: '',
+      twitter: 'rshwndsz',
+      github: 'rshwndsz',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'rshwndsz',
+      instagram: '',
       line: '',
       gitlab: '',
       weibo: '',
       codepen: '',
       youtube: '',
       soundcloud: '',
-    }
-  }
+    },
+  },
 };
