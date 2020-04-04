@@ -18,16 +18,20 @@
         color: $typographic-base-font-color;
         font-weight: normal;
         border: 0;
+        padding: 6px;
+        border-radius: 2px;
 
         &:hover,
         &:focus {
-          color: $color-primary;
-          border-bottom: 1px solid $color-primary;
+          color: $color-secondary;
+          padding: 5px;
+          border: 1px solid $color-secondary;
         }
 
         &--active {
-          color: $color-base;
-          border-bottom: 1px solid $color-base;
+          color: $color-primary;
+          padding: 5px;
+          border: 1px solid $color-primary;
         }
       }
     }

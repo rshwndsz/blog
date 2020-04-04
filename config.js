@@ -6,7 +6,7 @@ module.exports = {
   pathPrefix: '/blog',
   title: 'Blog by Russel Dsouza',
   subtitle:
-    'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    'Undergrad @ National Institute of Technology Karnataka, India',
   copyright: '',
   disqusShortname: '',
   postsPerPage: 5,
@@ -30,7 +30,7 @@ module.exports = {
     name: 'Russel Dsouza',
     photo: '/photo.jpg',
     bio:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+      'Undergrad @ National Institute of Technology Karnataka, India',
     contacts: {
       email: 'rshwndsz@gmail.com',
       facebook: '',
