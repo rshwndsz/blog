@@ -22,9 +22,7 @@
       &:focus {
         color: $color-base
       }
-
     }
-
   }
 
   &__subtitle {
@@ -32,5 +30,4 @@
     @include line-height(1);
     @include margin-bottom(1)
   }
-
 }

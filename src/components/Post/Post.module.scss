@@ -34,9 +34,7 @@
     &:focus {
       color: $color-primary;
     }
-
   }
-
 }
 
 @include breakpoint-md {
@@ -56,7 +54,5 @@
       top: 30px;
       left: 30px
     }
-
   }
-
 }

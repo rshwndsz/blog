@@ -2,5 +2,6 @@
 @import '../../assets/scss/mixins';
 
 .layout {
+    // http://lostgrid.org/docs.html#centering-elements
     lost-center: $layout-width;
 }

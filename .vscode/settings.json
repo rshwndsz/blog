@@ -1,0 +1,15 @@
+{
+    "scss.lint.validProperties": [
+        // http://lostgrid.org/docs.html#getting-started
+        "lost-center",
+        "lost-column",
+        "lost-utility",
+        "lost-column-cycle",
+        "lost-offset",
+        "lost-align",
+        "lost-row",
+        "lost-waffle",
+        //https://css-tricks.com/almanac/properties/s/speak/
+        "speak"
+        ],
+}
