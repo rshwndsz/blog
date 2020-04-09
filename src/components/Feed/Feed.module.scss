@@ -5,9 +5,7 @@
   &__item {
     @include margin-bottom(1.25);
 
-    &:last-child {
-      @include margin-bottom(.5);
-    }
+    &:last-child { @include margin-bottom(.5); }
 
     &-title {
       font-size: $typographic-base-font-size * 1.6875;
@@ -23,9 +21,20 @@
           color: $color-base;
           border-bottom: 1px solid $color-base;
         }
-
       }
 
+      // Animating an arrow at the end of post headings
+      &:after {
+        content: '\2192';
+        text-align: center;
+        opacity: 0;
+        transition: 0.2s;
+      }
+
+      &:hover:after {
+        padding-left: 5px;
+        opacity: 1;
+      }
     }
 
     &-description {
@@ -42,9 +51,7 @@
         text-transform: uppercase;
       }
 
-      &-divider {
-        margin: 0 5px;
-      }
+      &-divider { margin: 0 5px; }
 
       &-category {
         &-link {
@@ -54,28 +61,9 @@
           text-transform: uppercase;
 
           &:hover,
-          &:focus {
-            color: $color-primary;
-          }
-
+          &:focus { color: $color-primary; }
         }
-
       }
-
     }
-
-    &-readmore {
-      font-size: $typographic-base-font-size;
-      color: $color-primary;
-
-      &:hover,
-      &:focus {
-        color: $color-primary;
-        border-bottom: 1px solid $color-primary;
-      }
-
-    }
-
   }
-
 }

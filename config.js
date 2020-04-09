@@ -21,10 +21,6 @@ module.exports = {
       label: 'About me',
       path: '/pages/about',
     },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts',
-    },
   ],
   author: {
     name: 'Russel Dsouza',
