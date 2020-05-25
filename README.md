@@ -82,9 +82,7 @@ gatsby serve
 
 ```
 
-## Credits
-
-- Base template: [alxshelepenok/gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen)
+This blog project uses the awesome [alxshelepenok/gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen) template. The license for the project is below.
 
 ## License
 
